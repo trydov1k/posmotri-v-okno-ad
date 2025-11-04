@@ -116,6 +116,11 @@ ol {
   width: fit-content;
 }
 
+.search-form__label:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
@@ -137,10 +142,6 @@ ol {
 
 .search-form__pseudo-checkbox:checked {
 
-}
-
-.search-form__pseudo-checkbox:checked {
-  
 }
 
 .content__details {
@@ -179,7 +180,6 @@ ol {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-
 }
 
 .content__accent {
@@ -280,7 +280,7 @@ ol {
 
 .button:hover {
   text-decoration: underline;
-  /* Курсор */
+  cursor: pointer;
 }
 
 .button:focus-visible {
