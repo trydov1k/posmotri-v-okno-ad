@@ -197,6 +197,26 @@ ol {
   color: #FFF;
 }
 
+.content__card-link_current:active {
+  background-color: #545050;
+}
+
+.content__list-item {
+  padding: 0 3px;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
+.content__list-item:focus {
+  outline: none;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px solid #fff;
+}
+
 .content__video-card {
   display: flex;
   align-content: start;
