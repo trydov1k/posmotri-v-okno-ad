@@ -50,6 +50,16 @@ ol {
   background-color: #D9D9D9;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /* Мои изменения */
 
 .page {
@@ -81,6 +91,57 @@ ol {
 .result__video {
   height: 100%;
   width: 100%;
+}
+
+.search-form__textfield {
+  background-color: transparent;
+  color: #ffffff;
+  border-top: 1px solid #fff;
+  border-right: none;
+  border-bottom: 1px solid #fff;
+  border-left: none;
+  appearance: none;
+}
+
+
+.search-form__fieldset {
+  border: 0;
+}
+
+.search-form__fieldset:has(:focus-visible) {
+  /* outline: 20px solid #fff; Обработка наведением табом (не сделал) */
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.search-form__pseudo-checkbox::after {
+  background-color: #fff;
+  width: 19px;
+  height: 19px;
+}
+
+.search-form__pseudo-checkbox:checked {
+
+}
+
+.search-form__pseudo-checkbox:checked {
+  
 }
 
 .content__details {
